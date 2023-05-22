@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="droptowndiv" id="komisyonorani">
+        <div class="baslik">
+          <label for="komisyon">Komisyon Oranı (%)</label>
+        </div>
+        <input
+          type="number"
+          id="komisyon"
+          placeholder="Komisyon oranı giriniz"
+        />
+      </div>
+      <div class="dropdowndiv" id="alisId">
+        <div class="baslik">
+          <label for="alisInput">Alış Fiyatı (KDV dahil)</label>
+        </div>
+        <input type="number" id="alisInput" placeholder="₺ Fiyat giriniz" />
+      </div>
+      <div class="dropdowndiv" id="satisId">
+        <div class="baslik">
+          <label for="satisInput">Satış Fiyatı (KDV dahil)</label>
+        </div>
+        <input type="number" id="satisInput" placeholder="₺ Fiyat giriniz" />
+      </div>
+      <div id="kargoVkdv">
+        <div class="dropdowndiv" id="kdvcontainer">
+          <div class="baslik">
+            <label for="">KDV miktarı</label>
+          </div>
+          <select name="" id="kdvsel">
+            <option class="placeholder" value="KDV oranı seçin">
+              KDV oranı seçin
+            </option>
+            <option value="1" id="kdv1">1</option>
+            <option value="8" id="kdv8">8</option>
+            <option value="18" id="kdv18">18</option>
+          </select>
+        </div>
+        <div class="dropdowndiv" id="kargocontainer">
+          <div class="baslik">
+            <label for="">Kargo Ücreti (KDV dahil)</label>
+          </div>
+          <input type="number" id="kargoInput" placeholder="₺ Fiyat giriniz" />
+        </div>
+      </div>
+      <div class="buttons">
+        <a id="btnTemizle">Temizle</a>
+        <button id="btnHesaplama">Hesapla</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

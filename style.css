@@ -1,0 +1,10 @@
+.container {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+#btnTemizle {
+  text-decoration-line: underline;
+  cursor: pointer;
+}
