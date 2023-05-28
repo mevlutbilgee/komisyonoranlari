@@ -9,52 +9,65 @@
   </head>
   <body>
     <div class="container">
-      <div class="droptowndiv" id="komisyonorani">
-        <div class="baslik">
-          <label for="komisyon">Komisyon Oranı (%)</label>
-        </div>
-        <input
-          type="number"
-          id="komisyon"
-          placeholder="Komisyon oranı giriniz"
-        />
-      </div>
-      <div class="dropdowndiv" id="alisId">
-        <div class="baslik">
-          <label for="alisInput">Alış Fiyatı (KDV dahil)</label>
-        </div>
-        <input type="number" id="alisInput" placeholder="₺ Fiyat giriniz" />
-      </div>
-      <div class="dropdowndiv" id="satisId">
-        <div class="baslik">
-          <label for="satisInput">Satış Fiyatı (KDV dahil)</label>
-        </div>
-        <input type="number" id="satisInput" placeholder="₺ Fiyat giriniz" />
-      </div>
-      <div id="kargoVkdv">
-        <div class="dropdowndiv" id="kdvcontainer">
-          <div class="baslik">
-            <label for="">KDV miktarı</label>
+      <h2 id="title">Hızlı komisyon hesabı yap!</h2>
+      <div class="inputDiv">
+        <div class="komisyonVkdv">
+          <div class="dropdowndiv" id="komisyonorani">
+            <div class="baslik">
+              <label for="komisyon">Komisyon Oranı (%)</label>
+            </div>
+            <input
+              type="number"
+              id="komisyon"
+              placeholder="Komisyon oranı giriniz"
+            />
           </div>
-          <select name="" id="kdvsel">
-            <option class="placeholder" value="KDV oranı seçin">
-              KDV oranı seçin
-            </option>
-            <option value="1" id="kdv1">1</option>
-            <option value="8" id="kdv8">8</option>
-            <option value="18" id="kdv18">18</option>
-          </select>
-        </div>
-        <div class="dropdowndiv" id="kargocontainer">
-          <div class="baslik">
-            <label for="">Kargo Ücreti (KDV dahil)</label>
+          <div class="dropdowndiv" id="kargoDiv">
+            <div class="baslik">
+              <label for="">KDV miktarı (%)</label>
+            </div>
+            <input
+              type="number"
+              id="kdvInput"
+              placeholder="KDV oranını giriniz"
+            />
           </div>
-          <input type="number" id="kargoInput" placeholder="₺ Fiyat giriniz" />
+        </div>
+        <div class="alisVsatis">
+          <div class="dropdowndiv" id="alisId">
+            <div class="baslik">
+              <label for="alisInput">Alış Fiyatı (KDV dahil)</label>
+            </div>
+            <input type="number" id="alisInput" placeholder="₺ Fiyat giriniz" />
+          </div>
+          <div class="dropdowndiv" id="satisId">
+            <div class="baslik">
+              <label for="satisInput">Satış Fiyatı (KDV dahil)</label>
+            </div>
+            <input
+              type="number"
+              id="satisInput"
+              placeholder="₺ Fiyat giriniz"
+            />
+          </div>
         </div>
       </div>
+
       <div class="buttons">
         <a id="btnTemizle">Temizle</a>
-        <button id="btnHesaplama">Hesapla</button>
+        <button id="btnHesaplama">Hesapla!</button>
+      </div>
+    </div>
+    <br /><br />
+    <div id="sonucBox">
+      <h2 id="sonucBaslik">Hesaplama Sonucu</h2>
+      <div class="box">
+        <p class="text">Komisyon Kesintisi :</p>
+        <p class="sonuc" id="komisyonKesinti"></p>
+      </div>
+      <div class="box">
+        <p class="text">Net Kar :</p>
+        <p class="sonuc" id="netKarSonuc"></p>
       </div>
     </div>
     <script src="app.js"></script>

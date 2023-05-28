@@ -1,10 +1,131 @@
 .container {
-  width: 500px;
-  height: 300px;
+  width: 399.73px;
+  height: 355.62px;
   margin: auto;
-  border: 1px solid red;
+  border: 2.64922px solid #000000;
+  box-shadow: 5.29843px 5.29843px 0px #000000;
+  border-radius: 13.2461px;
+}
+#title {
+  margin-top: 39.03px;
+  margin-bottom: 37.18px;
+  margin-left: 33.36px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21.069px;
+  line-height: 30px;
+}
+label {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+.inputDiv {
+  /* border: 1px solid red; */
+  margin-left: 33.36px;
+  margin-right: 33.37px;
+}
+.komisyonVkdv {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+.alisVsatis {
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+}
+.dropdowndiv input {
+  width: 145px;
+  height: 38px;
+  padding-left: 10px;
+  font-size: 12px;
+  background: #ffffff;
+  border: 1.5px solid #000000;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+.buttons {
+  /* border: 1px solid red; */
+  width: 149px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 32.4px;
+  margin-left: 215px;
 }
 #btnTemizle {
-  text-decoration-line: underline;
+  /* border: 1px solid red; */
+  color: black;
+  margin-top: 15px;
+  width: 45px;
+  height: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
   cursor: pointer;
+}
+#btnHesaplama {
+  width: 91px;
+  height: 35px;
+  background: #8bfc4d;
+  border: 1.5px solid #000000;
+  box-shadow: 3px 4px 0px #000000;
+  border-radius: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+}
+#sonucBaslik {
+  text-align: left;
+  margin-left: 16px;
+  padding-top: 25px;
+  margin-bottom: 10px;
+  width: 363px;
+  height: 23px;
+  left: 487px;
+  top: 891.16px;
+  font-family: "Eudoxus Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+}
+#sonucBox {
+  color: black;
+  font-style: normal;
+  background-color: white;
+  width: 399.73px;
+  height: 176.31px;
+  margin: auto;
+  border-radius: 8px;
+}
+.box {
+  display: flex;
+  margin-left: 16px;
+  justify-content: space-between;
+  margin-right: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  height: 32px;
+}
+.text {
+  /* font-family: "Inter", sans-serif; */
+  font-size: 14px;
+  width: 300px;
+  text-align: start;
+  color: black;
+}
+.sonuc {
+  /* font-family: "Inter", sans-serif; */
+  font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
 }

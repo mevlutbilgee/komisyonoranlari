@@ -3,34 +3,29 @@ const btnHesaplama = document.getElementById("btnHesaplama");
 const btnTemizle = document.getElementById("btnTemizle");
 const alisInput = document.getElementById("alisInput");
 const satisInput = document.getElementById("satisInput");
-const kdvsel = document.getElementById("kdvsel");
-const kdv1 = document.getElementById("kdv1");
-const kdv8 = document.getElementById("kdv8");
-const kdv18 = document.getElementById("kdv18");
-const kargoInput = document.getElementById("kargoInput");
-
-let kdv = 0.18;
-kdvsel.addEventListener("click", () => {
-  if (kdvsel.value == kdv1.value) {
-    kdv = 0.01;
-  } else if (kdvsel.value == kdv8.value) {
-    kdv = 0.08;
-  } else if (kdvsel.value == kdv18.value) {
-    kdv = 0.18;
-  }
-});
+const kdvInput = document.getElementById("kdvInput");
+const komisyonKesinti = document.getElementById("komisyonKesinti");
+const netKarSonuc = document.getElementById("netKarSonuc");
 btnTemizle.addEventListener("click", () => {
   location.reload();
 });
+let KDVsiz_fiyat= 0;
 btnHesaplama.addEventListener("click", () => {
-  let KDVsiz_fiyat = satisInput.value / (1 + kdv);
+  console.log(kdvInput.value);
+  if (0 < kdvInput.value < 0.99) {
+    KDVsiz_fiyat = satisInput.value / (kdvInput.value + 1);
+  } else {
+
+    KDVsiz_fiyat = satisInput.value / (kdvInput.value / 100 + 1);
+  }
   let komisyonHesaplama = KDVsiz_fiyat * (komisyon.value / 100);
-  let kargoHesaplama = kargoInput.value / 1.18;
-  let netKar =
-    KDVsiz_fiyat - alisInput.value - komisyonHesaplama - kargoHesaplama;
+  let netKar = KDVsiz_fiyat - alisInput.value - komisyonHesaplama;
+  komisyonKesinti.innerHTML = `${komisyonHesaplama.toFixed(2)} ₺`;
+
   if (netKar > 0) {
     console.log(netKar.toFixed(2), "TL");
+    netKarSonuc.innerHTML = `${netKar.toFixed(2)} ₺`;
   } else {
-    console.log(netKar.toFixed(2), "TL", "zarar");
+    netKarSonuc.innerHTML = `${netKar.toFixed(2)} ₺ zarar`;
   }
 });
