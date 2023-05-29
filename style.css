@@ -209,7 +209,6 @@ label {
     flex-direction: column;
     justify-content: space-between;
     /* border: 1px solid red; */
-    /* margin-bottom: 30px; */
   }
   .dropdowndiv input {
     width: 90%;
