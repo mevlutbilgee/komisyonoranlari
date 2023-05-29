@@ -1,5 +1,5 @@
 .container {
-  width: 399.73px;
+  width: 640px;
   height: 355.62px;
   margin: auto;
   border: 2.64922px solid #000000;
@@ -7,32 +7,32 @@
   border-radius: 13.2461px;
 }
 #title {
-  margin-top: 39.03px;
-  margin-bottom: 37.18px;
-  margin-left: 33.36px;
+  margin-top: 38px;
+  margin-bottom: 30px;
+  margin-left: 65px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  font-size: 21.069px;
+  font-size: 26px;
   line-height: 30px;
 }
 label {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 20px;
 }
 .inputDiv {
   /* border: 1px solid red; */
-  margin-left: 33.36px;
-  margin-right: 33.37px;
+  margin-left: 65px;
+  margin-right: 65px;
 }
 .komisyonVkdv {
   /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 .alisVsatis {
   /* border: 1px solid blue; */
@@ -40,10 +40,10 @@ label {
   justify-content: space-between;
 }
 .dropdowndiv input {
-  width: 145px;
+  width: 210px;
   height: 38px;
   padding-left: 10px;
-  font-size: 12px;
+  font-size: 14px;
   background: #ffffff;
   border: 1.5px solid #000000;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
@@ -51,29 +51,30 @@ label {
 }
 .buttons {
   /* border: 1px solid red; */
-  width: 149px;
+  width: 190px;
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 35px;
   margin-bottom: 32.4px;
-  margin-left: 215px;
+  margin-left: 385px;
 }
 #btnTemizle {
   /* border: 1px solid red; */
   color: black;
   margin-top: 15px;
-  width: 45px;
+  width: 50px;
   height: 15px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 15px;
+  text-decoration: underline;
   cursor: pointer;
 }
 #btnHesaplama {
-  width: 91px;
-  height: 35px;
+  width: 100px;
+  height: 38px;
   background: #8bfc4d;
   color: #000000;
   border: 1.5px solid #000000;
@@ -82,7 +83,7 @@ label {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 13px;
   cursor: pointer;
 }
 #sonucBaslik {
@@ -97,18 +98,19 @@ label {
   font-family: "Eudoxus Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 17px;
 }
 #sonucBox {
   color: black;
   font-style: normal;
   background-color: white;
-  width: 399.73px;
+  width: 652px;
   height: 176.31px;
   margin: auto;
   border-radius: 8px;
 }
 .box {
+  /* border: 1px solid purple; */
   display: flex;
   margin-left: 16px;
   justify-content: space-between;
@@ -119,14 +121,142 @@ label {
 }
 .text {
   /* font-family: "Inter", sans-serif; */
-  font-size: 14px;
+  /* border: 1px solid blue; */
+  font-size: 15px;
   width: 300px;
   text-align: start;
   color: black;
 }
 .sonuc {
   /* font-family: "Inter", sans-serif; */
+  text-align: end;
+  width: 150px;
+  /* border: 1px solid red; */
   font-weight: bold;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    width: 450px;
+    height: 500px;
+  }
+  .komisyonVkdv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-bottom: 0px;
+  }
+  .alisVsatis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    /* margin-bottom: 30px; */
+  }
+  .dropdowndiv input {
+    width: 310px;
+    height: 38px;
+    padding-left: 10px;
+    font-size: 14px;
+    background: #ffffff;
+    margin-bottom: 10px;
+  }
+  .buttons {
+    margin-left: 195px;
+  }
+  #sonucBox {
+    width: 450px;
+  }
+  .text {
+    font-size: 14px;
+    width: 250px;
+  }
+  .sonuc {
+    width: 120px;
+    /* border: 1px solid red; */
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .container {
+    width: 80%;
+    height: 460px;
+  }
+  #title {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 19px;
+  }
+  .inputDiv {
+    /* border: 1px solid red; */
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .komisyonVkdv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    margin-bottom: 0px;
+  }
+  .alisVsatis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    /* margin-bottom: 30px; */
+  }
+  .dropdowndiv input {
+    width: 90%;
+    height: 38px;
+    padding-left: 10px;
+    font-size: 14px;
+    background: #ffffff;
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  .buttons {
+    /* border: 1px solid red; */
+    height: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+  }
+  #btnHesaplama {
+    width: 95%;
+    height: 32px;
+    margin: auto;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  #btnTemizle {
+    /* border: 1px solid red; */
+    color: black;
+    margin: auto;
+    width: 50px;
+    height: 15px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  #sonucBox {
+    width: 80%;
+  }
+  .text {
+    font-size: 12px;
+    width: 250px;
+  }
+  .sonuc {
+    width: 120px;
+    /* border: 1px solid red; */
+    font-size: 12px;
+  }
 }
