@@ -183,7 +183,7 @@ label {
 @media screen and (max-width: 460px) {
   .container {
     width: 80%;
-    height: 460px;
+    height: 470px;
   }
   #title {
     margin-top: 25px;
@@ -216,7 +216,7 @@ label {
     padding-left: 10px;
     font-size: 14px;
     background: #ffffff;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     margin: auto;
   }
   .buttons {
